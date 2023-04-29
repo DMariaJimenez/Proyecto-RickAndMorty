@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    margin: 10px;
+    background-color: #fecd51; 
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0, 6);
+    transition: all 0.5s ease-out;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 152px 152px 152px 152px;
+-webkit-border-radius: 152px 152px 152px 152px;
+ -moz-border-radius: 152px 152px 152px 152px;
+background: #93acb1;
+background: linear-gradient(90deg,#93acb1 0%, rgba(136,84,139,0.42) 20%);
+background: -webkit-linear-gradient(90deg,#93acb1 0%, rgba(136,84,139,0.42) 20%);
+background: -moz-linear-gradient(90deg,#93acb1 0%, rgba(136,84,139,0.42) 20%); 
+
+}
+
+.container :hover{
+    box-shadow: 3px 3px 3px;
+    rotate: 01;
+
+}
+
+.datos{
+    color: white;
+    font-size: small;
+    height: 20px;
+    margin: auto;
+    text-shadow: 1px -2px 20px rgba(0,0,0,0.09);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.image {
+    width: 50%;
+    padding: 8px;
+    border-radius: 15px;
+   
+}
+
+.closeButton {
+    border: 0px;
+    background-color:black;
+    width: fit-content;
+    height:fit-content;
+    border-radius: 15px;
+    transition: 0.5s;
+    color: white
+}
+.closeButton:hover {
+    box-shadow: black
+}
