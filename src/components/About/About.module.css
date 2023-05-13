@@ -1,0 +1,9 @@
+.title {
+    text-align: center center;
+    /* font-size: 2rem; */
+    background-image: url('https://i.redd.it/yuggvvvcy9p61.png');
+        width: 70%;
+        padding: 8px;
+        border-radius: 15px;
+       
+}

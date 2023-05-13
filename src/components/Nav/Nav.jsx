@@ -1,20 +1,32 @@
 import SearchBar from "../SearchBar/SearchBar";
+import style from "./Nav.module.css"
 import { Link } from "react-router-dom";
 
-const Nav = ({onSearch}) => {
-
+const Nav = (props) => {
+    const { onSearch, setAccess } = props;
+  
+    const handleLogOut = () => {
+      setAccess(false);
+    };
     return (
-        <div>
-            <SearchBar onSearch = {onSearch}/>
-            <button>
-                <Link to='/about'>ABOUT</Link>
-            </button>
-            <button>
-                <Link to='/home'>HOME</Link>
-            </button>
-        </div>
-    )
-
-
-}
-export default Nav;
+      <div className={style.container}>
+        <SearchBar onSearch={onSearch} />
+        <Link to="/about" >
+          <button className={style.btn}>About</button>
+        </Link>
+  
+        <Link to="/home" >
+          <button className={style.btn}>Home</button>
+        </Link>
+  
+        <Link to="/favorites" >
+          <button className={style.btn}>Favorites</button>
+        </Link>
+        
+        <button onClick={handleLogOut} className={style.btn}>LOG OUT</button>
+      </div>
+    );
+  };
+  
+  export default Nav;
+  

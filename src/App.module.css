@@ -8,7 +8,9 @@
    background-repeat: no-repeat;
    background-size: cover;
    background-clip: border-box;
-   background-attachment: fixed;  
+   background-attachment: fixed;
+
+    
    
  /* const backgroundUrlImage = 'https://i.redd.it/yuggvvvcy9p61.png';
  document.body.style.backgroundImage = `url(${backgroundUrlImage})`;
